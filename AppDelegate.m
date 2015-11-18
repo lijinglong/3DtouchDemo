@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "sencondViewController.h"
+#import "threeViewController.h"
+#import "fourViewController.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -92,9 +95,9 @@
 //    UIMutableApplicationShortcutItem *item15 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon15 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item16 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon16 userInfo:nil];
     UIMutableApplicationShortcutItem *item17 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon17 userInfo:nil];
-    UIMutableApplicationShortcutItem *item18 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon18 userInfo:nil];
-    UIMutableApplicationShortcutItem *item19 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon19 userInfo:nil];
-    UIMutableApplicationShortcutItem *item20 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon20 userInfo:nil];
+    UIMutableApplicationShortcutItem *item18 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"sencondItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon18 userInfo:nil];
+    UIMutableApplicationShortcutItem *item19 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"threeItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon19 userInfo:nil];
+    UIMutableApplicationShortcutItem *item20 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"fourItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon20 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item21 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon21 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item22 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon22 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item23 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon23 userInfo:nil];
@@ -107,6 +110,23 @@
     [UIApplication sharedApplication].shortcutItems = @[item17,item18,item19,item20];
     
     return YES;
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+
+    if ([shortcutItem.type isEqualToString:@"firstItem"]) {
+        ViewController *viewVc = [[ViewController alloc] init];
+        self.window.rootViewController = viewVc;
+    } else if ([shortcutItem.type isEqualToString:@"sencondItem"]) {
+        sencondViewController *sencondVC =[sencondViewController new];
+        self.window.rootViewController = sencondVC;
+    } else if ([shortcutItem.type isEqualToString:@"threeItem"]) {
+        threeViewController *threeVC = [threeViewController new];
+        self.window.rootViewController = threeVC;
+    } else {
+        fourViewController *fourVC = [fourViewController new];
+        self.window.rootViewController = fourVC;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
