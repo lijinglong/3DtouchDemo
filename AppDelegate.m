@@ -94,10 +94,10 @@
 //    UIMutableApplicationShortcutItem *item14 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon14 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item15 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon15 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item16 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon16 userInfo:nil];
-    UIMutableApplicationShortcutItem *item17 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon17 userInfo:nil];
-    UIMutableApplicationShortcutItem *item18 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"sencondItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon18 userInfo:nil];
-    UIMutableApplicationShortcutItem *item19 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"threeItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon19 userInfo:nil];
-    UIMutableApplicationShortcutItem *item20 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"fourItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon20 userInfo:nil];
+    UIMutableApplicationShortcutItem *item17 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"第一页" localizedSubtitle:@"第一个页面" icon:icon17 userInfo:nil];
+    UIMutableApplicationShortcutItem *item18 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"sencondItem" localizedTitle:@"第二页" localizedSubtitle:@"第二个页面" icon:icon18 userInfo:nil];
+    UIMutableApplicationShortcutItem *item19 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"threeItem" localizedTitle:@"第三页" localizedSubtitle:@"第三个页面" icon:icon19 userInfo:nil];
+    UIMutableApplicationShortcutItem *item20 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"fourItem" localizedTitle:@"第四页" localizedSubtitle:@"第四个页面" icon:icon20 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item21 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon21 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item22 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon22 userInfo:nil];
 //    UIMutableApplicationShortcutItem *item23 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"firstItem" localizedTitle:@"收件箱" localizedSubtitle:@"查看收件箱邮件" icon:icon23 userInfo:nil];
